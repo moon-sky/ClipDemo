@@ -2,19 +2,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/inset"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.dreamfac.clipdemo.MainActivity" 
-    android:background="@drawable/inset">
-
+    tools:context="com.dreamfac.clipdemo.MainActivity" >
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="50dip"
         android:background="@drawable/clip" />
-    
+
+    <ImageView
+        android:id="@+id/image_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/image"
+        android:src="@drawable/level_list" />
+
+    <ImageView
+        android:id="@+id/image_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/image_battery"
+        android:src="@drawable/myshape" />
 
 </RelativeLayout>
